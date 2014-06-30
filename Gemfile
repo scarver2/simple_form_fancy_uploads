@@ -8,6 +8,6 @@ gemspec
 group :development, :test do
   gem 'simplecov', require: false
   gem 'sqlite3'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 2.0'
   gem 'webrat'
 end
