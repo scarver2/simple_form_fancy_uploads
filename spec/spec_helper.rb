@@ -20,10 +20,11 @@ end
 
 # Load support files
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
+I18n.enforce_available_locales = false
 
 RSpec.configure do |config|
   require 'rspec/expectations'
+  config.infer_spec_type_from_file_location!
   config.include RSpec::Matchers
-
   config.mock_with :rspec
 end
